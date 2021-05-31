@@ -1,0 +1,98 @@
+name: shobek
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  circular_reveal_animation: ^1.1.5
+  flutter_staggered_animations:
+  provider: 
+  shared_preferences:
+  flutter_ringtone_player:
+  firebase_messaging:
+  dio:
+  shimmer:
+  cached_network_image:
+  google_maps_flutter:
+  flutter_spinkit:
+  geolocator: 
+  location:
+  image_cropper: 1.2.1
+  image_picker:
+  font_awesome_flutter:
+  animations: ^1.1.2
+  flutter_image_compress: ^0.6.5+1
+  fluttertoast: ^4.0.0
+  toast: ^0.1.5
+  progress_dialog: ^1.2.0
+  awesome_dialog: ^1.1.2
+  app_settings: 4.1.0
+  connectivity: ^0.4.5+1
+  slide_countdown_clock:
+  pin_code_fields:
+  country_code_picker: ^1.1.5
+  flutter_launcher_icons:
+  cupertino_icons: ^1.0.0
+  url_launcher: ^5.1.2
+  carousel_pro:
+  badges: ^1.1.6
+  toggle_switch: ^0.1.8
+  flutter_html:
+  lottie:
+  flutter_slidable: ^0.5.7
+  esys_flutter_share: ^1.0.2
+  firebase_dynamic_links: 
+  flutter_swiper: ^1.1.6
+  photo_view: ^0.10.3
+  multi_image_picker:
+  flutter_datetime_picker:
+  adhara_socket_io: ^0.4.1
+  flutter_bloc: ^6.1.3
+  audioplayers: ^0.17.4
+  bubble:
+  intl:
+  geocoder:
+
+ 
+ 
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path_android: "assets/icon/icon-001.png"
+  image_path_ios: "assets/icon/icon-001.png"
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icon/
+    - assets/icons/
+    - assets/lolitJson/
+    - assets/langs/ar.json
+    - assets/langs/en.json
+
+  fonts:
+    - family: cairo
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+    - family: caira
+      fonts:
+        - asset: assets/fonts/cairo_regular.ttf
+
+

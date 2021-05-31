@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1077106961819",
+    "project_id": "shobeek-a66aa",
+    "storage_bucket": "shobeek-a66aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077106961819:android:6b844ec7dc90b26071853e",
+        "android_client_info": {
+          "package_name": "com.tqnee.shobek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077106961819-eun64nlssq5ml32qj47kp0vbm9iem245.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tqnee.shobek",
+            "certificate_hash": "cfbb233e2d96cfc9f9512533609d1dcaae1becfe"
+          }
+        },
+        {
+          "client_id": "1077106961819-end02dsfp17174d04fs0f2focoost9p3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLWC_Z3JTBdGNEGMS_AhkVX0-YP_rUhjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077106961819-end02dsfp17174d04fs0f2focoost9p3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1077106961819-og8ckm39325vuummqd35l3t982kl2070.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tqnee.shobeek"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

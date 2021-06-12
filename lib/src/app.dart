@@ -157,7 +157,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'شبيك لبيك',
+        title: 'Clever Hands',
         theme: ThemeData(
           accentColor: Color.fromRGBO(38, 36, 39, 1),
           primaryColor: Color.fromRGBO(252, 240, 0, 1),

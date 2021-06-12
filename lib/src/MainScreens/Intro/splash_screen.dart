@@ -188,7 +188,7 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
                       child: Text(
                         Provider.of<SettingProvider>(context, listen: true)
                                 .welcomeText ??
-                            " مرحبا بكم في تطبيق شبيك",
+                            'Welcome to Clever Hands Application',
                         style: TextStyle(fontSize: 15),
                       ),
                       baseColor: Colors.black,

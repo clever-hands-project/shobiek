@@ -24,7 +24,7 @@ class NetworkUtil {
           "Content-Type": "multipart/form-data"
         };
       }
-      _dio.options.baseUrl = "https://shobaik-lobaik.com/api/v1/";
+      _dio.options.baseUrl = "https://cleverhandsthiet.tqnee.net/api/v1/";
       _response = await _dio.get(url);
       print("Correct request: " + _response.toString());
     } on DioError catch (e) {
@@ -42,7 +42,7 @@ class NetworkUtil {
       {FormData body, bool withToken = false, BaseModel model}) async {
     Response _response;
     String _token;
-    _dio.options.baseUrl = "https://shobaik-lobaik.com/api/v1/";
+    _dio.options.baseUrl = "https://cleverhandsthiet.tqnee.net/api/v1/";
     try {
       if (withToken) {
         // _token = await _sharedHelper.readString(CachingKey.AUTH_TOKEN);

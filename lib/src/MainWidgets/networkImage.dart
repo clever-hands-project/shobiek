@@ -19,7 +19,7 @@ Widget networkImage(String url,
               height: double.infinity),
           errorWidget: (context, url, error) {
             return Image.asset(
-                  "assets/icon/Clever Hands (1).png",
+                  "assets/images/image.jpg",
                   fit: BoxFit.fill,
                 ) ;
           },

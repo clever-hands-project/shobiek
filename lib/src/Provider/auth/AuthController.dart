@@ -103,13 +103,12 @@ class AuthController extends ChangeNotifier {
       _alert.toast(context: context, title: _phoneVerificationModel.data.value);
       notifyListeners();
       return true;
-    }
-    else {
+    } else {
       print("sendCode error");
       _phoneVerificationModel = PhoneVerificationModel.fromJson(response.data);
       customProgressDialog.hidePr();
-      // _alert.toast(
-      //     context: context, title: _phoneVerificationModel.error.first.value);
+      _alert.toast(
+          context: context, title: _phoneVerificationModel.error.first.value);
       notifyListeners();
       return false;
     }

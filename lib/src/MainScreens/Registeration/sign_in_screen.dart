@@ -53,11 +53,12 @@ class _SignInScreenState extends State<SignInScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   Spacer(flex: 3),
-                                  AppIcon(height: 300),
+                                  AppIcon(height: 100),
+                                  Spacer(flex: 3),
                                   Stack(children: [
                                     Padding(
                                         padding: const EdgeInsets.only(
-                                            top: 40.0, right: 8, left: 8,bottom: 50),
+                                            top: 40.0, right: 8, left: 8),
                                         child: Container(
                                             decoration: BoxDecoration(
                                                 color: Colors.transparent

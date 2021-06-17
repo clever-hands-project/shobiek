@@ -13,7 +13,7 @@ class ActiveOrder extends StatelessWidget {
     return Scaffold(
       appBar: defaultAppBar(
         context: context,
-        title: "طلب النشط",
+        title: "الطلب النشط",
         hasBack: true,
         onPress: () => Navigator.pop(context),
       ),

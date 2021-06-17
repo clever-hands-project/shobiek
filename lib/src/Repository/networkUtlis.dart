@@ -19,7 +19,7 @@ class NetworkUtil {
     };
     var response;
     try {
-      dio.options.baseUrl = "https://shobaik-lobaik.com/api/v1/";
+      dio.options.baseUrl = "https://cleverhandsthiet.tqnee.net/api/v1/";
       response = await dio.get(url, options: Options(headers: headers));
     } on DioError catch (e) {
       if (e.response != null) {
@@ -38,7 +38,7 @@ class NetworkUtil {
       "X-localization": "${localization.currentLanguage}"
     };
     var response;
-    dio.options.baseUrl = "https://shobaik-lobaik.com/api/v1/";
+    dio.options.baseUrl = "https://cleverhandsthiet.tqnee.net/api/v1/";
     try {
       response = await dio.post(url,
           data: body,

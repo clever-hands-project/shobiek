@@ -9,7 +9,7 @@ Widget networkImage(String url,
           imageUrl: url,
           imageBuilder: (context, imageProvider) => Image(
             image: imageProvider,
-            fit: BoxFit.fill,
+            fit: BoxFit.cover,
             height: height ?? double.infinity,
             width: width ?? double.infinity,
           ),

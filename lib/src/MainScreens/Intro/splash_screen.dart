@@ -166,8 +166,8 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Image.asset(
-                      'assets/icon/logo.png',
-                      height: 150,
+                      'assets/icon/logocl.png',
+                      height: 200,
                       fit: BoxFit.cover,
                     ),
                   ],
@@ -176,7 +176,7 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
               Container(
                 height: 50,
                 decoration: BoxDecoration(
-                  color: Color(0xffefdf35),
+                  color: Colors.brown[200],
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(40.0),
                       topLeft: Radius.circular(40.0)),
@@ -186,9 +186,8 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
                       const EdgeInsets.only(top: 15.0, left: 30, right: 30),
                   child: Shimmer.fromColors(
                       child: Text(
-                        Provider.of<SettingProvider>(context, listen: true)
-                                .welcomeText ??
-                            'Welcome to Clever Hands Application',
+
+                        'Welcome to Clever Hands Application',
                         style: TextStyle(fontSize: 15),
                       ),
                       baseColor: Colors.black,

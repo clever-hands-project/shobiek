@@ -9,8 +9,8 @@ class AppIcon extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 20.0, bottom: 20),
       child: Center(
-          child: Image.asset('assets/icon/logo.png',
-              height: 100 ?? 100, fit: BoxFit.cover)),
+          child: Image.asset('assets/icon/logocl.png',
+              height: 160 ?? 100, fit: BoxFit.cover)),
     );
   }
 }

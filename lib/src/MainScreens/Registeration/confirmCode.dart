@@ -163,14 +163,15 @@ class _ConfirmCodeState extends State<ConfirmCode> {
                                           onTap: () {
                                             if (widget
                                                     .stateOfVerificationCode ==
-                                                0) {
-                                              Provider.of<AuthController>(
-                                                      context,
-                                                      listen: false)
-                                                  .phoneVerification(context,
-                                                      pinCodeController.text)
-                                                  .then((value) {
-                                                if (value == true) {
+                                                0)
+                                            {
+                                              // Provider.of<AuthController>(
+                                              //         context,
+                                              //         listen: false)
+                                              //     .phoneVerification(context,
+                                              //         pinCodeController.text)
+                                              //     .then((value) {
+                                              //   if (value == false) {
                                                   int type = Provider.of<
                                                               AuthController>(
                                                           context,
@@ -186,38 +187,40 @@ class _ConfirmCodeState extends State<ConfirmCode> {
                                                     push(context, SignUpShop());
                                                   }
                                                 }
-                                              });
-                                            } else if (widget
-                                                    .stateOfVerificationCode ==
-                                                1) {
-                                                   Provider.of<ConfirmResetCodeProvider>(
-                                                      context,
-                                                      listen: false).code = pinCodeController.text;
-                                                  Provider.of<ConfirmResetCodeProvider>(context,listen: false).confirmResetCode(context);
-                                            } else {
-                                               
-                                              Provider.of<ChangePhoneCodeProvider>(
-                                                      context,
-                                                      listen: false)
-                                                  .changePhoneCode(
-                                                      pinCodeController.text,
-                                                      widget.phoneNumber,
-                                                      context)
-                                                  .then((v) {
-                                                if (v == true) {
-                                                  var auth = Provider.of<
-                                                          AuthController>(
-                                                      context,
-                                                      listen: false);
-                                                  auth.userModel.data
-                                                          .phoneNumber =
-                                                      widget.phoneNumber;
-                                                  auth.storageUserData(
-                                                      json.encode(auth.userModel
-                                                          .toJson()));
-                                                }
-                                              });
-                                            }
+
+
+                                            // else if (widget
+                                            //         .stateOfVerificationCode ==
+                                            //     1) {
+                                            //        Provider.of<ConfirmResetCodeProvider>(
+                                            //           context,
+                                            //           listen: false).code = pinCodeController.text;
+                                            //       Provider.of<ConfirmResetCodeProvider>(context,listen: false).confirmResetCode(context);
+                                            // }
+                                            // else {
+                                            //
+                                            //   Provider.of<ChangePhoneCodeProvider>(
+                                            //           context,
+                                            //           listen: false)
+                                            //       .changePhoneCode(
+                                            //           pinCodeController.text,
+                                            //           widget.phoneNumber,
+                                            //           context)
+                                            //       .then((v) {
+                                            //     if (v == true) {
+                                            //       var auth = Provider.of<
+                                            //               AuthController>(
+                                            //           context,
+                                            //           listen: false);
+                                            //       auth.userModel.data
+                                            //               .phoneNumber =
+                                            //           widget.phoneNumber;
+                                            //       auth.storageUserData(
+                                            //           json.encode(auth.userModel
+                                            //               .toJson()));
+                                            //     }
+                                            //   });
+                                            // }
                                           },
                                         ),
                                       ),

@@ -56,7 +56,7 @@ class _RegisterTextFieldState extends State<RegisterTextField> {
           child: TextFormField(
             inputFormatters: [
               widget.label == 'رقم الجوال'
-                  ? LengthLimitingTextInputFormatter(10)
+                  ? LengthLimitingTextInputFormatter(11)
                   : widget.leghth != null
                       ? LengthLimitingTextInputFormatter(widget.leghth)
                       : LengthLimitingTextInputFormatter(null),
@@ -77,10 +77,10 @@ class _RegisterTextFieldState extends State<RegisterTextField> {
                       return "${widget.hint == null ? widget.label : widget.hint} مطلوب";
                     }
                     if (widget.label == 'رقم الجوال') {
-                      if (!value.startsWith("05")) {
-                        return "يجب انا يبدا الهاتف ب05";
-                      } else if (value.length > 10 || value.length < 10) {
-                        return "يجب ان يكون الهاتف عبارة عن 10 رقم";
+                      if (!value.startsWith("0")) {
+                        return "يجب انا يبدا الهاتف ب0";
+                      } else if (value.length > 11 || value.length < 11) {
+                        return "يجب ان يكون الهاتف عبارة عن 11 رقم";
                       }
                     }
                     return null;

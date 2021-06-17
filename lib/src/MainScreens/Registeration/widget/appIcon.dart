@@ -7,10 +7,11 @@ class AppIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 20.0, bottom: 20),
+      padding: const EdgeInsets.only(top: 0),
       child: Center(
-          child: Image.asset('assets/icon/logo.png',
-              height: 100 ?? 100, fit: BoxFit.cover)),
+          child: Image.asset('assets/icon/Clever Hands (1).png',
+
+              height: 300 ?? 100, fit: BoxFit.cover)),
     );
   }
 }

@@ -37,9 +37,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Spacer(flex: 3),
-                        AppIcon(height: 150),
-                        Spacer(flex: 3),
+                        AppIcon(height: 300),
                         Stack(
                           children: [
                             Container(

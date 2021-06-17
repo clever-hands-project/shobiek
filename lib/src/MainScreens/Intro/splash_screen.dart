@@ -166,8 +166,8 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Image.asset(
-                      'assets/icon/logo.png',
-                      height: 150,
+                      'assets/icon/Clever Hands (1).png',
+                      height: 350,
                       fit: BoxFit.cover,
                     ),
                   ],
@@ -186,8 +186,7 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
                       const EdgeInsets.only(top: 15.0, left: 30, right: 30),
                   child: Shimmer.fromColors(
                       child: Text(
-                        Provider.of<SettingProvider>(context, listen: true)
-                                .welcomeText ??
+
                             'Welcome to Clever Hands Application',
                         style: TextStyle(fontSize: 15),
                       ),

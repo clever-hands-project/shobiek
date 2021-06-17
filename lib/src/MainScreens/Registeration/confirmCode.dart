@@ -170,7 +170,7 @@ class _ConfirmCodeState extends State<ConfirmCode> {
                                                   .phoneVerification(context,
                                                       pinCodeController.text)
                                                   .then((value) {
-                                                if (value == true) {
+                                                if (value == false) {
                                                   int type = Provider.of<
                                                               AuthController>(
                                                           context,
@@ -187,15 +187,17 @@ class _ConfirmCodeState extends State<ConfirmCode> {
                                                   }
                                                 }
                                               });
-                                            } else if (widget
-                                                    .stateOfVerificationCode ==
-                                                1) {
-                                                   Provider.of<ConfirmResetCodeProvider>(
-                                                      context,
-                                                      listen: false).code = pinCodeController.text;
-                                                  Provider.of<ConfirmResetCodeProvider>(context,listen: false).confirmResetCode(context);
-                                            } else {
-                                               
+                                            }
+                                            // else if (widget
+                                            //         .stateOfVerificationCode ==
+                                            //     1) {
+                                            //        Provider.of<ConfirmResetCodeProvider>(
+                                            //           context,
+                                            //           listen: false).code = pinCodeController.text;
+                                            //       Provider.of<ConfirmResetCodeProvider>(context,listen: false).confirmResetCode(context);
+                                            // }
+                                            else {
+
                                               Provider.of<ChangePhoneCodeProvider>(
                                                       context,
                                                       listen: false)
@@ -204,7 +206,7 @@ class _ConfirmCodeState extends State<ConfirmCode> {
                                                       widget.phoneNumber,
                                                       context)
                                                   .then((v) {
-                                                if (v == true) {
+                                                if (v == false) {
                                                   var auth = Provider.of<
                                                           AuthController>(
                                                       context,

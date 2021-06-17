@@ -73,13 +73,11 @@ class _SignUpUsersState extends State<SignUpUsers> {
                   children: <Widget>[
                     Padding(
                       padding: const EdgeInsets.only(
-                        top: 40,
                         left: 10,
                       ),
                       child: BackBtn(),
                     ),
                     AppIcon(height: 150),
-                    SizedBox(height: 50),
                     Stack(
                       children: [
                         Padding(

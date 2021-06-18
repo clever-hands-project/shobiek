@@ -60,24 +60,24 @@ class _AboutAppState extends State<AboutApp> {
                     ],
                   ),
                 ),
-                Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Container(
-                    width: MediaQuery.of(context).size.width,
-                    color: Colors.white,
-                    child: InkWell(
-                      onTap: _launchURL,
-                      child: Padding(
-                          padding: EdgeInsets.all(10),
-                          child: Text(
-                            'تصميم وتنفيذ تقني لتقنية المعملومات',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Colors.blueAccent, fontSize: 12),
-                          )),
-                    ),
-                  ),
-                ),
+                // Align(
+                //   alignment: Alignment.bottomCenter,
+                //   child: Container(
+                //     width: MediaQuery.of(context).size.width,
+                //     color: Colors.white,
+                //     child: InkWell(
+                //       onTap: _launchURL,
+                //       child: Padding(
+                //           padding: EdgeInsets.all(10),
+                //           child: Text(
+                //             'تصميم وتنفيذ تقني لتقنية المعملومات',
+                //             textAlign: TextAlign.center,
+                //             style: TextStyle(
+                //                 color: Colors.blueAccent, fontSize: 12),
+                //           )),
+                //     ),
+                //   ),
+                // ),
               ],
             ),
     );

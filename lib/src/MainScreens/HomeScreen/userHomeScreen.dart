@@ -81,7 +81,6 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                                       await Provider.of<MapHelper>(context,
                                               listen: false)
                                           .getLocation();
-                               
 
                                       if (Provider.of<MapHelper>(context,
                                                   listen: false)
@@ -123,7 +122,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                         ch.searchResults.length > 0) {
                       return ListView.builder(
                           padding:
-                              EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                              EdgeInsets.symmetric(horizontal: 10, vertical: 5,),
                           physics: ClampingScrollPhysics(),
                           itemCount: ch.searchResults.length,
                           shrinkWrap: true,
@@ -149,12 +148,13 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                                         .toString(),
                                     onTap: () {
                                       Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (c) => ShopDetails(
-                                                    shops:
-                                                        ch.shopsFilter[index],
-                                                  )));
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (c) => ShopDetails(
+                                            shops: ch.shopsFilter[index],
+                                          ),
+                                        ),
+                                      );
                                     },
                                   ),
                                 ),
@@ -165,8 +165,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                       return ch.shopsFilter.length == 0
                           ? Center(child: Text('لا يوجد محلات'))
                           : ListView.builder(
-                              padding: EdgeInsets.symmetric(
-                                  horizontal: 10, vertical: 5),
+                              padding: EdgeInsets.only(left: 10,right: 10,top: 5,bottom: 80),
                               physics: CustomScrollPhysics(),
                               itemCount: ch.shopsFilter.length,
                               shrinkWrap: true,
@@ -192,18 +191,20 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                                             .toString(),
                                         onTap: () {
                                           Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (c) => ShopDetails(
-                                                        shops: ch
-                                                            .shopsFilter[index],
-                                                      )));
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (c) => ShopDetails(
+                                                shops: ch.shopsFilter[index],
+                                              ),
+                                            ),
+                                          );
                                         },
                                       ),
                                     ),
                                   ),
                                 );
-                              });
+                              },
+                            );
                     }
                   }),
           ),
